@@ -11,9 +11,8 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-//    	String user = Security.connected();
-//        render(user);
-    	render();
+    	String user = Security.connected();
+        render(user);
     }
 
 }

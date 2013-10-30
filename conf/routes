@@ -3,7 +3,8 @@
 # ~~~~
 
 # Home page
-GET     /                                       Files.uploadForm
+GET     /                                       Application.index
+GET		/uploadForm								Files.uploadForm
 GET     /listUploads                            Files.listUploads
 GET     /downloadFile                           Files.downloadFile
 POST    /doUpload                               Files.doUpload
