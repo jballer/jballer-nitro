@@ -1,10 +1,10 @@
 package controllers;
 
-import models.User;
+import models.Account;
 
 public class Security extends controllers.Secure.Security {
 	static boolean authenticate(String username, String password) {
-		User user = User.find("byEmail", username).first();
+		Account user = Account.find("byEmail", username).first();
 		return user != null && user.password.equals(password);
 	}
 }
