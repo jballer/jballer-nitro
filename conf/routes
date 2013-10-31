@@ -6,8 +6,11 @@
 GET     /                                       Application.index
 GET		/uploadForm								Files.uploadForm
 GET     /listUploads                            Files.listUploads
+GET		/listAccounts							Admin.listAccounts
 GET     /downloadFile                           Files.downloadFile
+GET     /deleteAccount                          Admin.deleteAccount
 POST    /doUpload                               Files.doUpload
+POST	/addAccount								Admin.addAccount
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

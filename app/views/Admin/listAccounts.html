@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accounts</title>
+</head>
+<body>
+
+%{
+	if(isAdmin) {
+}%
+
+<h2>All Users</h2>
+<ul>
+#{list accounts, as:'account'}
+   <li>UserID ${account.id}: <b>${account.username}</b>
+   %{
+   		if(! account.username.equals(session.username) )
+   		{
+   }%
+   		<a href="@{ Admin.deleteAccount(account.id) }">Delete</a>
+   %{ 
+   		} else {
+   	}%
+   		(You)
+   	%{ 
+   		}
+   		if(account.isAdmin) {
+   	}%
+   		(Admin)
+   	%{
+   		}
+   	}%
+#{/list}
+
+</ul>
+<h2>Add User:</h2>
+  	#{form @addAccount(), enctype:'multipart/form-data'}
+   Username: <input type="text" name="username"><br/>
+   Password: <input type="password" name="password"><br/>
+   Admin?	<input type="checkbox" name="isAdmin"><br/>
+   <input type="hidden" name="isAdmin" value="false" />
+   <input type="submit" name="submit" value="Add User">
+	#{/form}
+%{
+	}
+	else
+	{
+}%
+	<h1>Hey ${session.user} You're Not An Administrator!</h1>
+%{
+	}
+}%
+
+</body>
+</html>
