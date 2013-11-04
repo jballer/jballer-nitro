@@ -2,15 +2,26 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+# Debugging
+GET		/listAccounts							Admin.listAccounts
+POST	/addAccount								Admin.addAccount
+GET     /deleteAccount                          Admin.deleteAccount
+
 # Home page
 GET     /                                       Application.index
-GET		/uploadForm								Files.uploadForm
-GET     /listUploads                            Files.listUploads
-GET		/listAccounts							Admin.listAccounts
+
+# S3
+GET     /listAllUploads                         Files.listAllUploads
+GET		/listUserUploads						Files.listUserUploads
 GET     /downloadFile                           Files.downloadFile
-GET     /deleteAccount                          Admin.deleteAccount
+GET		/deleteFile								Files.deleteFile
+GET     /uploadForm		                        Files.uploadForm
 POST    /doUpload                               Files.doUpload
-POST	/addAccount								Admin.addAccount
+
+# Accounts
+GET		/signup									Users.signup
+POST	/createUser								Users.createUser
+# POST	/login									Secure.login
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

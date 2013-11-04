@@ -12,7 +12,14 @@ public class Application extends Controller {
 
     public static void index() {
     	String user = Security.connected();
-        render(user);
+    	
+    	if (user == null)
+    	{
+    		Users.signup();
+    	}
+    	else
+    	{
+    		Files.listUserUploads();
+    	}
     }
-
 }

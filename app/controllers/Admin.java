@@ -12,51 +12,32 @@ import play.modules.s3blobs.S3Blob;
 import play.mvc.*;
 import models.*;
 
-@With(Secure.class)
+import controllers.Secure.Security;;
+
 public class Admin extends Controller {
-	
-	private static Boolean authenticate()
-	{
-		Boolean isAdmin = Security.isAdministrator();
-		
-		return isAdmin;
-	}
 	
 	public static void listAccounts()
 	  {
 		String user = Security.connected();
-		Boolean isAdmin = authenticate();
 		
 		List<Account> accounts = Account.findAll();
+		List<Document> docs = Document.findAll();
 		
-		if (isAdmin)
-			render(accounts, user, isAdmin);
-		else
-			forbidden();
+		render(accounts, user, docs);
 	  }
 	
 	  public static void addAccount(String username, String password, Boolean isAdmin)
 	  {
-		authenticate();
-	    
 		final Account account = new Account();
 	    account.username = username.toLowerCase();
 	    account.password = password;
-	    if (isAdmin) {
-	    	account.isAdmin = isAdmin;
-	    }
-	    else {
-	    	isAdmin = false;
-	    }
-	    
+	    	    
 	    account.save();
 	    listAccounts();
 	  }
 	  
 	  public static void deleteAccount(long id)
 	  {
-		  authenticate();
-		  
 		  Account account = Account.findById(id);
 		  if (account != null)
 		  {

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+<h3>Register as a new user</h3>
+
+%{
+	if(flash.error) {
+}%
+	<b>${flash.error}</b>
+%{
+	}
+}%
+
+<ul>
+#{form @createUser(), enctype:'multipart/form-data'}
+   Email: <input type="text" name="username"><br/>
+   Password: <input type="password" name="password"> (A-Z,0-9, no special characters)<br/>
+   <input type="submit" name="submit" value="Register">
+#{/form}
+</ul>
+</body>
+</html>

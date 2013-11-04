@@ -4,10 +4,29 @@
     <title>File Uploads</title>
 </head>
 <body>
+<p>
+	Uploads for <b>${ session.username }</b>:
+</p>
+Would you like to <a href="@{Files.uploadForm}">upload another file</a>?
+<br><br>
+<hr />
+<h3>Files you've uploaded:</h3>
 <ul>
 #{list docs, as:'doc'}
-   <li><a href="downloadFile?id=${doc.id}">${doc.fileName} - <i>${doc.comment}</i></li>
+   <li><a href="downloadFile?id=${doc.id}">${doc.fileName} - <i>${doc.comment}</i></a></li>
 #{/list}
 </ul>
+
+<hr />
+<h3>Tags that we've generated:</h3>
+
+<table>
+#{list tags, as:'tag'}
+	<tr>
+		<td>${tag.tagString}</td>
+		<td>${tag.count}</td>
+	</tr>
+#{/list}
+</table>
 </body>
 </html>
