@@ -3,15 +3,14 @@ package controllers;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.List;
 
 import models.Document;
 import play.libs.MimeTypes;
 import play.modules.s3blobs.S3Blob;
-
 import play.mvc.*;
 import models.*;
-
 import controllers.Secure.Security;;
 
 public class Admin extends Controller {
@@ -21,7 +20,14 @@ public class Admin extends Controller {
 		String user = Security.connected();
 		
 		List<Account> accounts = Account.findAll();
-		List<Document> docs = Document.findAll();
+		List<Document> docs = new ArrayList<Document>();
+		try {
+			Document.findAll();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getLocalizedMessage());
+		}
 		
 		render(accounts, user, docs);
 	  }
@@ -31,9 +37,7 @@ public class Admin extends Controller {
 		final Account account = new Account();
 	    account.username = username.toLowerCase();
 	    account.password = password;
-	    	    
 	    account.save();
-	    listAccounts();
 	  }
 	  
 	  public static void deleteAccount(long id)

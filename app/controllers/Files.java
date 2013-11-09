@@ -64,9 +64,12 @@ public class Files extends Controller
   
   public static void listUserUploads()
   {
-	long userID = Account.idForUsername(Security.connected());
-    List<Document> docs = Document.find("uploadedBy = ?", Account.accountForUserID(userID)).fetch();
-    renderTemplate("/Files/listUploads.html", docs, Security.connected());
+	Account account = Account.accountForUsername(Security.connected());
+    List<Document> docs = new ArrayList<Document>();
+    try {
+    	Document.find("uploadedby = ?", account.id).fetch();
+    } catch(Exception e) {}
+    renderTemplate("/Files/listUploads.html", docs, account.username);
   }
 
   public static void downloadFile(long id)
@@ -177,12 +180,10 @@ public class Files extends Controller
 			  // If not, make it.
 			  
 			  Tag tag = Tag.find("byTagString", key).first();
-			  Boolean newTag = false;
 			  
 			  if (tag == null)
 			  {
-				  System.out.println("Creating new tag: " + tag.tagString);
-				  newTag = true;
+				  System.out.println("Creating new tag: " + key);
 				  
 				  tag = new Tag();
 				  tag.tagString = key; 

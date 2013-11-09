@@ -53,11 +53,12 @@ public class Users extends Controller {
 			
 			// Log in with the new account
 			try {
-				Secure.authenticate(username, password, false);
-				Files.listUserUploads();
+//				Secure.authenticate(username, password, false);
+				Security.authenticate(username, password);
 			}
 			catch (Throwable e) {
 				e.printStackTrace();
+				Application.index();
 			}
 			
 			Files.listUserUploads();

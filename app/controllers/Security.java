@@ -18,7 +18,7 @@ public class Security extends controllers.Secure.Security {
 		{
 			Account account = null;
 			try {
-				account = Account.find("byUsername", username.toLowerCase()).first();
+				account = Account.find("username = ?", username.toLowerCase()).first();
 			}
 			catch(Exception e)
 			{
