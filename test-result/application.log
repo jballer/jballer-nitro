@@ -1,0 +1,1225 @@
+12 Nov 2013 16:50:31,254 INFO  ~ Starting /Users/jballer/Developer/git/jballer-nitro
+12 Nov 2013 16:50:31,264 INFO  ~ Module s3blobs is available (/Users/jballer/Developer/git/jballer-nitro/modules/s3blobs-0.1)
+12 Nov 2013 16:50:31,265 INFO  ~ Module secure is available (/Users/jballer/Developer/git/play-1.2.6/modules/secure)
+12 Nov 2013 16:50:32,799 WARN  ~ You're running Play! in DEV mode
+12 Nov 2013 16:50:32,970 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+12 Nov 2013 16:50:39,086 INFO  ~ Connected to jdbc:h2:mem:play;MODE=PostgreSQL;LOCK_MODE=0
+12 Nov 2013 16:50:40,387 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 16:50:40,836 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 16:50:43,129 INFO  ~ Received successful response: 200, AWS Request ID: 5F103B1B0CD639E3
+12 Nov 2013 16:50:43,130 INFO  ~ Application 'jballer-nitro' is now started !
+12 Nov 2013 16:51:14,209 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 16:51:14,223 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 16:51:15,502 INFO  ~ Received successful response: 200, AWS Request ID: 2B15740544BB4509
+12 Nov 2013 16:51:22,655 ERROR ~ 
+
+@6g93cj0a5
+Internal Server Error (500) for request GET /listAccounts
+
+Template execution error (In /app/views/Admin/listAccounts.html around line 12)
+Execution error occured in template /app/views/Admin/listAccounts.html. Exception raised was MissingPropertyException : No such property: username for class: models.User.
+
+play.exceptions.TemplateExecutionException: No such property: username for class: models.User
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Admin.listAccounts(Admin.java:32)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: groovy.lang.MissingPropertyException: No such property: username for class: models.User
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+12 Nov 2013 16:51:25,191 ERROR ~ 
+
+@6g93cj0a6
+Internal Server Error (500) for request GET /listAccounts
+
+Template execution error (In /app/views/Admin/listAccounts.html around line 12)
+Execution error occured in template /app/views/Admin/listAccounts.html. Exception raised was MissingPropertyException : No such property: username for class: models.User.
+
+play.exceptions.TemplateExecutionException: No such property: username for class: models.User
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Admin.listAccounts(Admin.java:32)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: groovy.lang.MissingPropertyException: No such property: username for class: models.User
+	at /app/views/Admin/listAccounts.html.(line:12)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+12 Nov 2013 16:56:47,286 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 16:56:47,300 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 16:56:49,719 INFO  ~ Received successful response: 200, AWS Request ID: CB007383B09C9E26
+12 Nov 2013 17:02:00,512 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 17:02:00,547 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 17:02:01,483 INFO  ~ Received successful response: 200, AWS Request ID: 98DE2F057AC13F53
+12 Nov 2013 17:02:38,771 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 17:02:38,783 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 17:02:40,062 INFO  ~ Received successful response: 200, AWS Request ID: C40DCCE03B42D983
+12 Nov 2013 17:14:31,055 ERROR ~ 
+
+@6g93cj0a8
+Internal Server Error (500) for request GET /signup
+
+Template not found (In /app/controllers/Application.java around line 41)
+The template Application/signup.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Application/signup.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:41)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:14:42,863 ERROR ~ 
+
+@6g93cj0aa
+Internal Server Error (500) for request GET /signup
+
+No route found (In /app/views/Application/index.html around line 6)
+No route able to invoke action Application.login with arguments {} was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:41)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:15:35,544 ERROR ~ 
+
+@6g93cj0ac
+Internal Server Error (500) for request POST /login
+
+Template not found (In /app/controllers/Application.java around line 55)
+The template Application/login.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Application/login.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.login(Application.java:55)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:19:05,766 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 17:19:05,782 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 17:19:07,251 INFO  ~ Received successful response: 200, AWS Request ID: 448043B01AB98D37
+12 Nov 2013 17:25:47,049 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 17:25:47,061 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 17:25:47,953 INFO  ~ Received successful response: 200, AWS Request ID: 7E3D14EE543B2147
+12 Nov 2013 17:28:05,759 ERROR ~ 
+
+@6g93cj0ai
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 21)
+The template /app/views/Application/signup.html does not compile : #{/ifnot} is not opened.
+
+play.exceptions.TemplateCompilationException: #{/ifnot} is not opened.
+	at play.templates.GroovyTemplateCompiler.endTag(GroovyTemplateCompiler.java:308)
+	at play.templates.TemplateCompiler.generate(TemplateCompiler.java:93)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:15)
+	at play.templates.GroovyTemplateCompiler.compile(GroovyTemplateCompiler.java:41)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:28)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:82)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:172)
+	at play.mvc.Controller.renderTemplate(Controller.java:661)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:28:14,815 ERROR ~ 
+
+@6g93cj0aj
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 4)
+The template /app/views/Application/signup.html does not compile : unexpected token: method 
+
+play.exceptions.TemplateCompilationException: unexpected token: method 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:32:08,501 ERROR ~ 
+
+@6g93cj0ak
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 6)
+The template /app/views/Application/signup.html does not compile : expecting '(', found 'session' 
+
+play.exceptions.TemplateCompilationException: expecting '(', found 'session' 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:32:25,451 ERROR ~ 
+
+@6g93cj0al
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 8)
+The template /app/views/Application/signup.html does not compile : unexpected token: % 
+
+play.exceptions.TemplateCompilationException: unexpected token: % 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:32:52,670 ERROR ~ 
+
+@6g93cj0am
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 8)
+The template /app/views/Application/signup.html does not compile : unexpected token: % 
+
+play.exceptions.TemplateCompilationException: unexpected token: % 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:32:57,083 ERROR ~ 
+
+@6g93cj0an
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 8)
+The template /app/views/Application/signup.html does not compile : unexpected token: % 
+
+play.exceptions.TemplateCompilationException: unexpected token: % 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:33:01,493 ERROR ~ 
+
+@6g93cj0ao
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 9)
+The template /app/views/Application/signup.html does not compile : unexpected token: else 
+
+play.exceptions.TemplateCompilationException: unexpected token: else 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:33:19,444 ERROR ~ 
+
+@6g93cj0ap
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 8)
+The template /app/views/Application/signup.html does not compile : expecting '}', found 'else' 
+
+play.exceptions.TemplateCompilationException: expecting '}', found 'else' 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:33:27,517 ERROR ~ 
+
+@6g93cj0b0
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 8)
+The template /app/views/Application/signup.html does not compile : unexpected token: % 
+
+play.exceptions.TemplateCompilationException: unexpected token: % 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:33:36,176 ERROR ~ 
+
+@6g93cj0b1
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 8)
+The template /app/views/Application/signup.html does not compile : expecting '}', found 'else' 
+
+play.exceptions.TemplateCompilationException: expecting '}', found 'else' 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:35:36,555 ERROR ~ 
+
+@6g93cj0b2
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 0)
+The template /app/views/Application/signup.html does not compile : unexpected token: } 
+
+play.exceptions.TemplateCompilationException: unexpected token: } 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:38:20,540 ERROR ~ 
+
+@6g93cj0b3
+Internal Server Error (500) for request GET /signup
+
+Template execution error (In /app/views/Application/signup.html around line 6)
+Execution error occured in template /app/views/Application/signup.html. Exception raised was NullPointerException : Cannot invoke method connected() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method connected() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:27)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method connected() on null object
+	at /app/views/Application/signup.html.(line:6)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+12 Nov 2013 17:38:44,224 ERROR ~ 
+
+@6g93cj0b4
+Internal Server Error (500) for request GET /signup
+
+Template execution error (In /app/views/Application/signup.html around line 6)
+Execution error occured in template /app/views/Application/signup.html. Exception raised was NullPointerException : Cannot invoke method connected() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method connected() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:29)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method connected() on null object
+	at /app/views/Application/signup.html.(line:6)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+12 Nov 2013 17:39:05,795 ERROR ~ 
+
+@6g93cj0b5
+Internal Server Error (500) for request GET /signup
+
+Template execution error (In /app/views/Application/signup.html around line 6)
+Execution error occured in template /app/views/Application/signup.html. Exception raised was NullPointerException : Cannot invoke method connected() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method connected() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:29)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method connected() on null object
+	at /app/views/Application/signup.html.(line:6)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+12 Nov 2013 17:39:07,523 ERROR ~ 
+
+@6g93cj0b6
+Internal Server Error (500) for request GET /signup
+
+Template execution error (In /app/views/Application/signup.html around line 6)
+Execution error occured in template /app/views/Application/signup.html. Exception raised was NullPointerException : Cannot invoke method connected() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method connected() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:29)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method connected() on null object
+	at /app/views/Application/signup.html.(line:6)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+12 Nov 2013 17:39:08,493 ERROR ~ 
+
+@6g93cj0b7
+Internal Server Error (500) for request GET /signup
+
+Template execution error (In /app/views/Application/signup.html around line 6)
+Execution error occured in template /app/views/Application/signup.html. Exception raised was NullPointerException : Cannot invoke method connected() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method connected() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:29)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method connected() on null object
+	at /app/views/Application/signup.html.(line:6)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+12 Nov 2013 17:39:09,350 ERROR ~ 
+
+@6g93cj0b8
+Internal Server Error (500) for request GET /signup
+
+Template execution error (In /app/views/Application/signup.html around line 6)
+Execution error occured in template /app/views/Application/signup.html. Exception raised was NullPointerException : Cannot invoke method connected() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method connected() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:29)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method connected() on null object
+	at /app/views/Application/signup.html.(line:6)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+12 Nov 2013 17:41:30,818 ERROR ~ 
+
+@6g93cj0b9
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 0)
+The template /app/views/Application/signup.html does not compile : unexpected token: } 
+
+play.exceptions.TemplateCompilationException: unexpected token: } 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:29)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:42:48,263 ERROR ~ 
+
+@6g93cj0ba
+Internal Server Error (500) for request GET /signup
+
+Template compilation error (In /app/views/Application/signup.html around line 13)
+The template /app/views/Application/signup.html does not compile : #{error} is not closed.
+
+play.exceptions.TemplateCompilationException: #{error} is not closed.
+	at play.templates.GroovyTemplateCompiler.endTag(GroovyTemplateCompiler.java:316)
+	at play.templates.TemplateCompiler.generate(TemplateCompiler.java:93)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:15)
+	at play.templates.GroovyTemplateCompiler.compile(GroovyTemplateCompiler.java:41)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:28)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:87)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:172)
+	at play.mvc.Controller.renderTemplate(Controller.java:661)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.signup(Application.java:29)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:45:01,805 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 17:45:01,828 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 17:45:02,959 INFO  ~ Received successful response: 200, AWS Request ID: 528716A15AFB3AB2
+12 Nov 2013 17:47:11,566 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 17:47:11,599 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 17:47:12,516 INFO  ~ Received successful response: 200, AWS Request ID: B265593106C0B0EB
+12 Nov 2013 17:47:21,391 ERROR ~ 
+
+@6g93cj0bc
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 6)
+No route able to invoke action Application.login with arguments {} was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:24)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:48:18,808 ERROR ~ 
+
+@6g93cj0be
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 6)
+No route able to invoke action Application.login with arguments {} was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:24)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:48:20,537 ERROR ~ 
+
+@6g93cj0bg
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 6)
+No route able to invoke action Application.login with arguments {} was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:24)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:48:22,668 ERROR ~ 
+
+@6g93cj0bi
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/Application/index.html around line 6)
+No route able to invoke action Application.login with arguments {} was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:24)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:49:41,020 ERROR ~ 
+
+@6g93cj0bj
+Internal Server Error (500) for request GET /
+
+Template compilation error (In /app/views/Application/index.html around line 5)
+The template /app/views/Application/index.html does not compile : #{user.email} is not closed.
+
+play.exceptions.TemplateCompilationException: #{user.email} is not closed.
+	at play.templates.GroovyTemplateCompiler.endTag(GroovyTemplateCompiler.java:316)
+	at play.templates.TemplateCompiler.generate(TemplateCompiler.java:93)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:15)
+	at play.templates.GroovyTemplateCompiler.compile(GroovyTemplateCompiler.java:41)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:28)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:87)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:172)
+	at play.mvc.Controller.renderTemplate(Controller.java:661)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:24)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:49:53,238 ERROR ~ 
+
+@6g93cj0bk
+Internal Server Error (500) for request GET /
+
+Template compilation error (In /app/views/Application/index.html around line 3)
+The template /app/views/Application/index.html does not compile : #{if} is not closed.
+
+play.exceptions.TemplateCompilationException: #{if} is not closed.
+	at play.templates.GroovyTemplateCompiler.endTag(GroovyTemplateCompiler.java:316)
+	at play.templates.TemplateCompiler.generate(TemplateCompiler.java:93)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:15)
+	at play.templates.GroovyTemplateCompiler.compile(GroovyTemplateCompiler.java:41)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:28)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:87)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:172)
+	at play.mvc.Controller.renderTemplate(Controller.java:661)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:24)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:50:21,762 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 17:50:21,774 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 17:50:22,789 INFO  ~ Received successful response: 200, AWS Request ID: 7D125AC09447391A
+12 Nov 2013 17:52:22,882 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 17:52:22,901 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 17:52:23,847 INFO  ~ Received successful response: 200, AWS Request ID: 4C6AC96D380FDD04
+12 Nov 2013 17:52:38,497 ERROR ~ 
+
+@6g93cj0bm
+Internal Server Error (500) for request GET /login
+
+No route found (In /app/views/Secure/login.html around line 37)
+No route able to invoke action Application.signup with arguments {} was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Secure.login(Secure.java:65)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:53:15,904 ERROR ~ 
+
+@6g93cj0bo
+Internal Server Error (500) for request POST /login
+
+No route found (In {module:secure}/app/controllers/Secure.java around line 203)
+No route able to invoke action Security.onAuthenticated with arguments {} was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.mvc.Controller.redirect(Controller.java:603)
+	at play.mvc.Controller.redirect(Controller.java:545)
+	at controllers.Security.onAuthenticated(Security.java)
+	at play.utils.Java.invokeStaticOrParent(Java.java:162)
+	at play.utils.Java.invokeChildOrStatic(Java.java:184)
+	at controllers.Secure$Security.invoke(Secure.java:203)
+	at controllers.Secure$Security.access$0(Secure.java:200)
+	at controllers.Secure.redirectToOriginalURL(Secure.java:110)
+	at controllers.Secure.authenticate(Secure.java:95)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:53:46,205 ERROR ~ 
+
+@6g93cj0c0
+Internal Server Error (500) for request POST /login
+
+No route found (In {module:secure}/app/controllers/Secure.java around line 203)
+No route able to invoke action Security.onAuthenticated with arguments {} was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.mvc.Controller.redirect(Controller.java:603)
+	at play.mvc.Controller.redirect(Controller.java:545)
+	at controllers.Security.onAuthenticated(Security.java)
+	at play.utils.Java.invokeStaticOrParent(Java.java:162)
+	at play.utils.Java.invokeChildOrStatic(Java.java:184)
+	at controllers.Secure$Security.invoke(Secure.java:203)
+	at controllers.Secure$Security.access$0(Secure.java:200)
+	at controllers.Secure.redirectToOriginalURL(Secure.java:110)
+	at controllers.Secure.authenticate(Secure.java:95)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:54:45,053 INFO  ~ Starting the S3Blobs module
+12 Nov 2013 17:54:45,067 INFO  ~ Sending Request: GET https://nitro.jballer.s3.amazonaws.com / Headers: (Content-Type: application/x-www-form-urlencoded; charset=utf-8, ) 
+12 Nov 2013 17:54:46,007 INFO  ~ Received successful response: 200, AWS Request ID: BFC8B9EA289E219E
+12 Nov 2013 17:55:54,115 ERROR ~ 
+
+@6g93cj0c3
+Internal Server Error (500) for request GET /
+
+Template not found (In /app/views/Application/index.html around line 5)
+The template tags/user/email.html or tags/user/email.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/user/email.html or tags/user/email.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/Application/index.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:19)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:56:45,703 ERROR ~ 
+
+@6g93cj0c6
+Internal Server Error (500) for request GET /
+
+Template not found (In /app/views/Application/index.html around line 5)
+The template tags/user/email.html or tags/user/email.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/user/email.html or tags/user/email.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/Application/index.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:19)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:56:47,226 ERROR ~ 
+
+@6g93cj0c9
+Internal Server Error (500) for request GET /
+
+Template not found (In /app/views/Application/index.html around line 5)
+The template tags/user/email.html or tags/user/email.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/user/email.html or tags/user/email.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/Application/index.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:19)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:56:58,039 ERROR ~ 
+
+@6g93cj0ca
+Internal Server Error (500) for request GET /
+
+Template compilation error (In /app/views/Application/index.html around line 5)
+The template /app/views/Application/index.html does not compile : unexpected token: ) 
+
+play.exceptions.TemplateCompilationException: unexpected token: ) 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:19)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:57:06,591 ERROR ~ 
+
+@6g93cj0cb
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 5)
+Execution error occured in template /app/views/Application/index.html. Exception raised was MissingPropertyException : No such property: email for class: java.lang.String Possible solutions: empty.
+
+play.exceptions.TemplateExecutionException: No such property: email for class: java.lang.String
+Possible solutions: empty
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:19)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: groovy.lang.MissingPropertyException: No such property: email for class: java.lang.String
+Possible solutions: empty
+	at /app/views/Application/index.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+12 Nov 2013 17:57:19,162 ERROR ~ 
+
+@6g93cj0cc
+Internal Server Error (500) for request GET /
+
+Template execution error (In /app/views/Application/index.html around line 5)
+Execution error occured in template /app/views/Application/index.html. Exception raised was MissingPropertyException : No such property: email for class: java.lang.String Possible solutions: empty.
+
+play.exceptions.TemplateExecutionException: No such property: email for class: java.lang.String
+Possible solutions: empty
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:19)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: groovy.lang.MissingPropertyException: No such property: email for class: java.lang.String
+Possible solutions: empty
+	at /app/views/Application/index.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+12 Nov 2013 17:57:25,002 ERROR ~ 
+
+@6g93cj0cd
+Internal Server Error (500) for request GET /
+
+Template compilation error (In /app/views/Application/index.html around line 5)
+The template /app/views/Application/index.html does not compile : #{user?.email} is not closed.
+
+play.exceptions.TemplateCompilationException: #{user?.email} is not closed.
+	at play.templates.GroovyTemplateCompiler.endTag(GroovyTemplateCompiler.java:316)
+	at play.templates.TemplateCompiler.generate(TemplateCompiler.java:93)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:15)
+	at play.templates.GroovyTemplateCompiler.compile(GroovyTemplateCompiler.java:41)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:28)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:82)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:172)
+	at play.mvc.Controller.renderTemplate(Controller.java:661)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:19)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:57:30,137 ERROR ~ 
+
+@6g93cj0cg
+Internal Server Error (500) for request GET /
+
+Template not found (In /app/views/Application/index.html around line 5)
+The template tags/user?/email.html or tags/user?/email.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/user?/email.html or tags/user?/email.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/Application/index.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:19)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:58:21,738 ERROR ~ 
+
+@6g93cj0cj
+Internal Server Error (500) for request GET /home
+
+Template not found (In /app/views/Application/home.html around line 5)
+The template tags/user?/email.html or tags/user?/email.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/user?/email.html or tags/user?/email.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/Application/home.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.home(Application.java:30)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:58:29,908 ERROR ~ 
+
+@6g93cj0cm
+Internal Server Error (500) for request GET /home
+
+Template not found (In /app/views/Application/home.html around line 5)
+The template tags/user/email.html or tags/user/email.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/user/email.html or tags/user/email.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/Application/home.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.home(Application.java:30)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:58:30,804 ERROR ~ 
+
+@6g93cj0cp
+Internal Server Error (500) for request GET /home
+
+Template not found (In /app/views/Application/home.html around line 5)
+The template tags/user/email.html or tags/user/email.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/user/email.html or tags/user/email.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/Application/home.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.home(Application.java:30)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:58:44,461 ERROR ~ 
+
+@6g93cj0d2
+Internal Server Error (500) for request GET /home
+
+Template not found (In /app/views/Application/home.html around line 5)
+The template tags/user.html or tags/user.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/user.html or tags/user.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/Application/home.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.home(Application.java:30)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:58:47,740 ERROR ~ 
+
+@6g93cj0d3
+Internal Server Error (500) for request GET /home
+
+Template compilation error (In /app/views/Application/home.html around line 5)
+The template /app/views/Application/home.html does not compile : #{user} is not closed.
+
+play.exceptions.TemplateCompilationException: #{user} is not closed.
+	at play.templates.GroovyTemplateCompiler.endTag(GroovyTemplateCompiler.java:316)
+	at play.templates.TemplateCompiler.generate(TemplateCompiler.java:93)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:15)
+	at play.templates.GroovyTemplateCompiler.compile(GroovyTemplateCompiler.java:41)
+	at play.templates.TemplateCompiler.compile(TemplateCompiler.java:28)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:87)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:172)
+	at play.mvc.Controller.renderTemplate(Controller.java:661)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.home(Application.java:30)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+12 Nov 2013 17:59:27,024 ERROR ~ 
+
+@6g93cj0d6
+Internal Server Error (500) for request GET /
+
+Template not found (In /app/views/Application/index.html around line 5)
+The template tags/user?/email.html or tags/user?/email.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/user?/email.html or tags/user?/email.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:378)
+	at /app/views/Application/index.html.(line:5)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:19)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)

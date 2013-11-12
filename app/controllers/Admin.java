@@ -19,7 +19,7 @@ public class Admin extends Controller {
 	  {
 		String user = Security.connected();
 		
-		List<Account> accounts = Account.findAll();
+		List<User> accounts = User.findAll();
 		List<Document> docs = new ArrayList<Document>();
 		try {
 			Document.findAll();
@@ -32,17 +32,15 @@ public class Admin extends Controller {
 		render(accounts, user, docs);
 	  }
 	
-	  public static void addAccount(String username, String password, Boolean isAdmin)
+	  public static void addAccount(String email, String password, Boolean isAdmin)
 	  {
-		final Account account = new Account();
-	    account.username = username.toLowerCase();
-	    account.password = password;
-	    account.save();
+		User.registerUser(email, password);
+		listAccounts();
 	  }
 	  
 	  public static void deleteAccount(long id)
 	  {
-		  Account account = Account.findById(id);
+		  User account = User.findById(id);
 		  if (account != null)
 		  {
 			  account.delete();

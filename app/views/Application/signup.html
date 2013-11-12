@@ -1,0 +1,27 @@
+#{extends 'main.html' /}
+<div id="tools">
+    <a href="@{Secure.login()}">Log In</a>
+</div>
+<h2>Register as a New User</h2>
+*{Eventually want to hide this from logged in users}*
+<div id="signup">
+#{form @Application.signup()}
+    <p>
+        #{field 'email'}
+        <label>Email Address:</label>
+        <input type="text" name="${field.name}" value="${flash.email}"/>
+        #{ifErrors}#{error 'email' /}#{/ifErrors}
+        #{/field}
+    </p>
+    <p>
+        #{field 'password'}
+        <label>Password:</label>
+        <input type="password" name="${field.name}" value="${flash.password}" />
+        #{ifErrors}#{error 'password' /}#{/ifErrors}
+        #{/field}
+    </p>    
+    <p>
+        <input type="submit" value="Sign me up!" />
+    </p>
+#{/form}
+</div>

@@ -2,6 +2,9 @@ package controllers;
 
 import play.*;
 import play.mvc.*;
+import play.data.validation.Error;
+
+import controllers.Secure.Security;
 
 import java.util.*;
 
@@ -12,14 +15,21 @@ public class Application extends Controller {
 
     public static void index() {
     	String user = Security.connected();
-    	
-    	if (user == null)
-    	{
-    		Users.signup();
+    	if(user != null) {
+    		home();
     	}
-    	else
-    	{
-    		Files.listUserUploads();
+    	render();
+    }
+    
+    public static void signup() {
+    	render();
+    }
+    
+    public static void home() {
+    	User user = User.find("byEmail", Security.connected()).first();
+    	if(user == null) {
+    		forbidden();
     	}
+    	render(user);
     }
 }

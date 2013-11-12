@@ -1,78 +1,44 @@
 package controllers;
 
-import models.Account;
+import controllers.Secure.Security;
+import models.User;
+import play.data.validation.Error;
 import play.mvc.Controller;
 
 public class Users extends Controller {
 	
-	public static void signup()
-	{
-		Boolean usernameError = false;
-		Boolean passwordError = false;
-		render(usernameError, passwordError);
-	}
-	
-	public static void signup(Boolean usernameError, Boolean passwordError)
-	{
-		render(usernameError, passwordError);
-	}
-	
-	public static void createUser(String username, String password)
-	{
-		Account account = new Account();
-		
-		Boolean validUsername = false;
-		Boolean validPassword = false;
-		
-		String errorString = "";
-		
-		if(account.setUsername(username)) // returns false if invalid
-		{
-			System.out.println("Username validated.");
-			validUsername = true;
-		}
-		else
-		{
-			errorString += "Username Invalid.\n";
-		}
-		
-		if(account.setPassword(password))
-		{
-			System.out.println("Password validated.");
-			validPassword = true;
-		}
-		else
-		{
-			errorString += "Password invalid.";
-		}
-		
-		if(validUsername && validPassword)
-		{
-			// Store the new account
-			account.save();
-			
-			// Log in with the new account
-			try {
-//				Secure.authenticate(username, password, false);
-				Security.authenticate(username, password);
-			}
-			catch (Throwable e) {
-				e.printStackTrace();
-				Application.index();
-			}
-			
-			Files.listUserUploads();
-		}
-		else
-		{
-			// FAIL
-			account.delete();
-			
-			flash.error(errorString);
-			
-			signup(!validUsername, !validPassword);
-		}
-		
-	}
-	
+	public static void signup(String email, String password) {
+    	validation.email(email);
+    	validation.required("Email address", email);
+    	validation.required("Password", password);
+    	
+    	if(validation.hasErrors()) {
+            for(Error error : validation.errors()) {
+                System.out.println(error.message());
+            }
+        }
+    	
+    	if(validation.hasErrors()) {
+			params.flash(); // add http parameters to the flash scope
+			validation.keep(); // keep the errors for the next request
+			render();
+    	}
+    	else {
+    		// Log in and go to home page
+    		Security.authenticate(email, password);
+    		Application.home();
+    	}
+    }
+    
+    public static void login(String email, String password) {
+    	validation.required(email);
+    	validation.required(password);
+    	validation.email(email);
+    	
+    	if(validation.hasErrors()) {
+    		params.flash();
+    		validation.keep();
+    		render("@index");
+    	}
+    }
 }
